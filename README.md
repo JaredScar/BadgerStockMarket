@@ -46,3 +46,7 @@ You must use https://money.cnn.com website for this to work properly (for each S
 
 ## Liability Reasons
 For liability reasons, I wanted to include this at the bottom. BadgerStockMarket is in no way affiliated with the Stock Market and/or its proprieters. BadgerStockMarket was created as an educational tool to be used within the GTA V modification known as FiveM. BadgerStockMarket is also not affiliated with the Robinhood application. Although the script used the Robinhood logo. Once again, BadgerStockMarket was created as an educational tool. If anyone has a problem with this, please contact me and we can get the changes adjusted appropriately, thank you.
+
+## Download
+
+https://github.com/JaredScar/BadgerStockMarket
