@@ -1,0 +1,366 @@
+body {
+	
+}
+div#notifs {
+	float: right;
+	width: 600px;
+	height: 20vh;
+	overflow-y: auto;
+	position: static;
+	display: none;
+}
+div#notifs span {
+	color: white;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 22px;
+	display: block;
+	text-align: center;
+}
+span.buy {
+	background-color: green;
+}
+span.sell {
+	background-color: yellow;
+}
+span.error {
+	background-color: red;
+}
+div.phoneBackground {
+	background-image: url("iphone.png");
+	height:882px;
+	width: 609px;
+	background-size: 609px 882px;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+div.content-contain {
+	background-color: #f2f2f2;
+	height: 655px;
+	width: 556px;
+	position: absolute;
+	margin-top: 98px;
+	margin-left: 28px;
+}
+div.loadingScreen {
+	display: none;
+	position: absolute;
+	text-align: center;
+	height: 675px;
+	width: 556px;
+	z-index: 1;
+}
+div.browsePage {
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: absolute;
+}
+/* Popular Stocks Section */
+div.container-padding {
+	margin-left: 20px;
+}
+div.greenBackdrop {
+	background-color: #21CE99;
+	position: absolute;
+	height: 220px;
+	width: 100%;
+}
+div.greenBackdrop h1 {
+	color: white;
+	font-size: 42px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+div.greenBackdrop h3 {
+	font-size: 28px;
+	font-weight: normal;
+	color: white;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+div.pStocks-contain {
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	height: 200px;
+	display: inline-block;
+	white-space: nowrap;
+}
+div.pStocks-box {
+	display: inline-block;
+	background-color: white;
+	height: 150px;
+	width: 150px;
+	border-radius: 5px;
+	margin-right: 10px;
+	padding: 15px;
+}
+div.pStocks-box span {
+	font-weight: bolder;
+	font-size: 22px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+div.pStocks-box h3 {
+	color: black;
+	margin: 0;
+	font-weight: bolder;
+	font-size: 28px;
+	margin-top: 20px;
+}
+div.pStocks-box h4 {
+	font-weight: bolder;
+	font-size: 28px;
+	margin: 0;
+}
+div.pStocks-box.negative h3, div.pStocks-box.negative h4 {
+	color: #F08671;
+}
+div.pStocks-box.positive h3, div.pStocks-box.positive h4 {
+	color: #66C0A1;
+}
+/* EndPopular Stocks Section */
+
+/* Popular Collections Section */
+div.popularCollections {
+	position: absolute;
+	margin-top: 360px;
+	height: 280px;
+	overflow-y: auto;
+}
+div.popularCollections h1 {
+	margin-left: 20px;
+	font-weight: normal;
+	color: #5D5D5D;
+}
+div.popularCollections button {
+	background-color: #27D19D;
+	color: white;
+	border-radius: 50px;
+	padding: 15px;
+	border: 0;
+	font-size: 22px;
+	margin-right: 15px;
+	margin-bottom: 25px;
+}
+div.popularCollections button:hover {
+	background-color: #27D161;
+}
+/* End Popular Collections Section */
+
+/* Graph page */
+div.graphPage {
+	height: 90%;
+	width: 100%;
+	display: none;
+	position: absolute;
+}
+div.graphPage #stockGraphs {
+	overflow-y: auto;
+	height: 90%;
+}
+div.graphPage h1 {
+	margin-left: 20px;
+	font-weight: normal;
+	color: #5D5D5D;
+}
+div.graphPage div.item {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+div.graphPage div.item div.item-data {}
+div.graphPage div.item div.item-data h2 {
+	margin: 0;
+	display: inline-block;
+}
+div.graphPage div.item div.item-data h3 {
+	float: right;
+	margin: 0;
+	display: inline-block;
+	margin-right: 30px;
+}
+div.graphPage div.item div.item-section {
+	text-align: center;
+	margin-top: 10px;
+}
+div.graphPage div.item div.item-section button {
+	width: 49%;
+	border-radius: 5px;
+	color: white;
+	border: 0;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+div.graphPage div.item div.item-section button:hover {
+	opacity: .80;
+}
+div.graphPage div.item div.item-section button.sell {
+	background-color: #F45A36;
+}
+div.graphPage div.item div.item-section button.buy {
+	background-color: #23CF9D;
+}
+/* End Graph page */
+
+/* Dollar page */
+div.dollarPage {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: none;
+}
+div.dollarPage div.backdrop {
+	background-color: #21CE99;
+	position: absolute;
+	height: 100px;
+	width: 100%;
+}
+div.dollarPage div.stock-head {}
+div.dollarPage div.stock-head h2 {
+	font-size: 20px;
+	color: white;
+	font-weight: bolder;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+div.dollarPage div.stock-tabs {
+	margin-top: 0px;
+	overflow-x: auto;
+	display: inline-block;
+	white-space: nowrap;
+	width: 100%;
+	height: 55px;
+}
+div.dollarPage div.stock-tabs span {
+	color: white;
+	font-size: 26px;
+	margin-right: 40px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom: 2px solid #21CE99;
+	white-space: nowrap;
+}
+div.dollarPage div.stock-tabs span.active {
+	border-bottom: 3px solid white;
+}
+div.dollarPage div.stock-graph {
+	margin-top: 0px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+div.dollarPage div.stock-graph img {
+	height: 250px;
+	width: 100%;
+}
+div.dollarPage div.buttons {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.dollarPage div.buttons button {
+	width: 90%;
+	color: white;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 24px;
+	padding: 20px;
+	margin-top: 40px;
+}
+div.dollarPage div.buttons button.buy {
+	background-color: #2AD19D;
+}
+div.dollarPage div.buttons button.sell {
+	background-color: #F45A36;
+}
+div.dollarPage div.buttons button:hover {}
+/* End Dollar page */
+
+/* User page */
+div.userPage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: none;
+}
+div.userPage h2 {
+	background-color: #2AD19D;
+	color: white;
+	width: 100%;
+	margin: 0;
+	font-size: 32px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	text-align: center;
+}
+div.userPage table {
+	font-size: 20px;
+	border-spacing: 15px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 63%;
+	height: 85%;
+	display: block;
+	overflow-y: auto;
+}
+div.userPage table tr {}
+div.userPage table th {}
+div.userPage table td {}
+/* End User page */
+
+/* Navbar */
+div.navbar {
+	background-color: white;
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	position: absolute;
+	margin-top: 626px;
+}
+div.navbar button {
+	height: 100%;
+	width: 50px;
+	margin-right: 40px;
+	margin-left: 40px;
+	font-size: 28px;
+	background-color: transparent;
+	border: 0;
+	opacity: .3;
+}
+div.navbar button.active {
+	opacity: 1;
+}
+div.navbar button:hover {
+	opacity: 1;
+}
+/* End Navbar */
+
+#homeButton {
+	position: absolute;
+	height: 60px;
+	width: 100px;
+	border-radius: 50%;
+	border: 0;
+	margin-top: 695px;
+	margin-left: 228px;
+	background-color: transparent;
+}
